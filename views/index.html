@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<link rel="Shortcut Icon" href="assets/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<title>
+		车集
+	</title>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- 布局（grid）（.g-）；
+模块（module）（.m-）；
+元件（unit）（.u-）；
+功能（function）（.f-）；
+皮肤（skin）（.s-）；
+状态（.z-）。
+
+.item 为 .m 模块里的每一个项：.m .item-1{}
+
+.text 为 .m 模块里的文本部分: .m .text-1{} -->
+<body data-spy="scroll" data-target="#scrollspy">
+	<div id="app">
+		<div style="height:100%;">
+			<nav class="navbar navbar-default navbar-fixed-top m-nav" id="scrollspy">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="javascript:;" class="navbar-brand"></a>
+						<img src="img/logo.png" alt="cheji" class="img-responsive">
+						</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active">
+								<a href="#index" class="p0">
+									首页
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#product" class="dropDown-toggle">
+									产品
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#zhikeliu">智客流</a>
+									</li>
+									<li>
+										<a href="#jike">集刻</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#experience">
+									体验
+								</a>
+							</li>
+							<li>
+								<a href="#contact">
+									联系我们
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		
+			<!-- 全屏播放格式代码 -->
+			<div class="m-video" id="index">
+				<div style="width: 100%;height: 100%;">
+					<!-- <video autoplay muted loop> -->
+						<!-- <source src="Easy Fullscreen HTML5 Background Video.mp4" type="video/mp4"> -->
+					<!-- </video> -->
+					<!-- 设置背景色 -->
+					<h2 class="video-text text-center">用数据<br>连通真实世界</h2>
+					<img src="img/favion.png" class="img-responsive" alt="">
+					<!-- <div id="overlay"></div> -->
+					<!-- <div id="video_cover"></div> -->
+				</div>
+			</div>
+		
+			<!-- 我们的产品 -->
+			<div class="m-product" id="product">
+		
+				<div class="container">
+					<div class="row text-center">
+						<span class="text-center hr"></span>
+						<h2 class="text-center">我们的产品</h2>
+						<p class="text-center">全新营销体验&nbsp;&nbsp;&nbsp;效率全面刷新</p>
+					</div>
+					<div class="row js-selector">
+						<div class="item col-lg-3 col-md-3 col-sm-3  col-xs-6 text-center">
+							<div class="active js-setBgColor">
+								<img class="img-responsive" style="display: inline-block;" src="img/product1.png" alt="">
+								<br>
+								<span>精确</span>
+							</div>
+						</div>
+						<div class="item col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+							<div class="js-setBgColor">
+								<img class="img-responsive" style="display: inline-block;" src="img/product12.png" alt="">
+								<br>
+								<span>实时</span>
+							</div>
+						</div>
+						<div class="item col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+							<div class="js-setBgColor">
+								<img class="img-responsive" style="display: inline-block;" src="img/product13.png" alt="">
+								<br>
+								<span>智能</span>
+							</div>
+						</div>
+						<div class="item col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+							<div class="js-setBgColor">
+								<img class="img-responsive" style="display: inline-block;" src="img/product14.png" alt="">
+								<br>
+								<span>全局</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 智客留 -->
+				<div class="container" id="zhikeliu">
+					<div class="row zhikeliu text-center">
+						<!--logo-->
+						<div class="logo"></div>
+						<h2>
+							<span class="text">智客留</span>
+							<span class="line"></span>
+							<span class="text-2">智能客流统计系统</span>
+						</h2>
+					</div>
+					<div class="row zhikeliu-sub text-center">
+						<div class="col-lg-6 col-md-6 bg-img col-sm-6 col-xs-12 hidden-sm hidden-md hidden-lg">
+							<div class="floater"></div>
+							<img style="display: inline-block;" class="img-responsive" src="img/zhikeliu.png" alt="智客留">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<div>
+								<div class="icon icon-left-1"></div>
+								<p>实现有效管理</p>
+							</div>
+							<div>
+								<div class="icon icon-left-2"></div>
+								<p>可靠预测趋势</p>
+							</div>
+							<div>
+								<div class="icon icon-left-3"></div>
+								<p>智慧人群分析</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 bg-img col-sm-6 hidden-xs">
+							<div class="floater"></div>
+							<img style="display: inline-block;" class="img-responsive" src="img/zhikeliu.png" alt="智客留">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<div>
+								<div class="icon icon-right-1"></div>
+								<p>高效团队协作</p>
+							</div>
+							<div>
+								<div class="icon icon-right-2"></div>
+								<p>智能感知客流</p>
+							</div>
+							<div>
+								<div class="icon icon-right-3"></div>
+								<p>精确营销触达</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 集刻 -->
+				<div class="container" id="jike" style="padding-bottom: 115px">
+					<div class="row zhikeliu jike text-center">
+						<!--logo-->
+						<div class="logo logo-2"></div>
+						<h2>
+							<span class="text">集刻</span>
+							<span class="line"></span>
+							<span class="text-2">智能集客系统</span>
+						</h2>
+					</div>
+					<div class="row zhikeliu-sub jike-sub text-center">
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div>
+								<div class="icon icon-left-3"></div>
+								<p>数据入口</p>
+								<p class="text-3">
+									随时生成的独立二维码，创建活动; 超吸引人气的抽奖机制，奖品受欢 迎，引爆全场，人气爆棚；
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 bg-img col-sm-6 hidden-xs">
+							<img style="display: inline-block;" class="img-responsive" src="img/example.png" alt="智客留">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div>
+								<div class="icon icon-right-1"></div>
+								<p>线索推送</p>
+								<p class="text-3">
+									高意向客户线索极速推送至顾问
+									<br> 手机端APP，高效促成交；
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div>
+								<div class="icon icon-left-3"></div>
+								<p>管理后台</p>
+								<p class="text-3">
+									现场扫码集客数据马上进入后台，实时查看，
+									<br> 100%验证，100%可追踪；强大数据管理后台，按
+									<br> 销售管理权限建制部署，轻松远程管理全国车展。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<!-- 体验产品 -->
+			<div class="m-contact m-product" id="experience">
+				<div class="form">
+					<form class="form-horizontal">
+						<div class="text-center">
+							<span class="text-center hr"></span>
+							<h2 class="text-center">产品体验</h2>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">联系人</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">联系电话</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">Email</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">公司名称</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">公司地址</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">公司需求</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 text-4 control-label">备注</label>
+							<div class="col-sm-7">
+								<textarea class="form-control" rows="5"></textarea>
+							</div>
+						</div>
+						<div class="row text-center">
+							<button type="submit" class="btn btn-custom">提交</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		
+			<!-- 地址 -->
+			<div class="m-address" id="contact">
+				<div class="container">
+					<div class="text-center">
+						<span class="text-center hr"></span>
+						<h2 class="text-center">联系我们</h2>
+					</div>
+					<div class="row" style="padding-top: 20px;">
+						<div class="col-lg-6 col-sm-6 col-xs-12">
+							<div>
+								<address>
+									<h2 class="">杭州车集信息科技有限公司</h2>
+									<p>联系电话: 0571 - 87602539</p>
+									<p class="text-left">地址: 杭州市滨江区江二路400号和瑞科技园
+										<br> T3 - 307室</p>
+								</address>
+								<br>
+								<address>
+									<h2>杭州车集信息科技有限公司 ( 上海分公司 )</h2>
+									<p>联系电话: 18017727555</p>
+									<p>地址: 上海杨浦区长阳路1687号长阳创谷1号楼
+										<br>四楼1408室</p>
+								</address>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-xs-12">
+							<div class="text text-left">
+								<p>
+									车集，潜心于精准数据营销企业级应用领域，拥有核心竞争力的数据应用产品。<br>
+									 我们提供目前领先市场的营销数据系统，提供更全面的数据服务，在效率、效果和体验层面均达到全新高度。<br> 我们的产品和服务在汽车营销行业已经得到广泛的认可，在汽车业广泛推广和应用。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<!-- 页脚 -->
+			<footer class="footer">
+			   <div class="container">
+				   <div class="row">
+					   <div class="col-lg-12">
+							<p class="text-center">&copy;2017杭州车集信息科技有限公司</p>
+					   </div>
+				   </div>
+			   </div>
+			</footer>
+		</div>
+	</div>
+	<script src="vendor/jquery.min.js"></script>
+	<script src="js/b.min.js"></script>
+</body>
+</html>

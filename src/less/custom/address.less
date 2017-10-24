@@ -1,0 +1,46 @@
+@import '@variable';
+.m-address {
+    background-color: @bg14;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 60px;
+    .container {
+        .text-center > .hr {
+            display: inline-block;
+            width: 80px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: @c1;
+            margin-top: 50px;
+        }
+        > .row > .col-lg-6:nth-child(2) > .text > p {
+            font-family: @ff9;
+            margin-top: 10px;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+        > .row > .col-lg-6 > div > address  {
+            > h2 {
+                font-family: @ff9;
+                font-size: 22px;
+            }
+            > abbr {
+                font-size: 20px;
+                color: @c2;
+            }
+            > p {
+                font-size: 20px;
+                color:@c2;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .m-address > .container > .row > div > div  {
+        text-align: center;
+        p {
+           text-align: center;
+       }
+    }
+}
